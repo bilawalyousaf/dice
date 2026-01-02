@@ -1,0 +1,90 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto Slab", serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0f2027;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  color: white;
+  border: 3px solid rgba(255, 255, 255, 0.6);
+  height: auto;
+  min-height: 300px;
+  width: 90%;
+  max-width: 350px;
+  font-size: clamp(18px, 4vw, 30px);
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 5px;
+  gap: 3px;
+
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.05)
+  );
+
+  backdrop-filter: blur(8px);
+}
+
+#luck {
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  margin: 0;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.icons i {
+  color: white;
+  font-size: clamp(40px, 10vw, 70px);
+  width: clamp(60px, 20vw, 100px);
+  height: clamp(60px, 20vw, 100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  height: 50px;
+  width: 60%;
+  max-width: 150px;
+  font-size: clamp(18px, 5vw, 28px);
+  color: white;
+  background-color: rgb(162, 107, 107);
+  border-radius: 15px;
+}
+.output {
+  font-size: 30px;
+  color: white;
+}
+
+@media (max-width: 480px) {
+  .container {
+    border-radius: 25px;
+    gap: 8px;
+    padding: 10px;
+  }
+  .icons {
+    gap: 10px;
+  }
+}
